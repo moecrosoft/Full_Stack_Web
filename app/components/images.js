@@ -79,7 +79,7 @@ export default function Images() {
                         handleUpload(); // upload
                         }
                     }}
-                    className={`px-4 py-2 rounded-lg transition ${
+                    className={`px-4 py-2 rounded-lg cursor-pointer transition ${
                         !imageName
                         ? "bg-gray-600 text-gray-400 cursor-not-allowed"
                         : fileSelected
@@ -108,7 +108,7 @@ export default function Images() {
                         <p className="text-gray-200 font-medium text-center">{image.image_name}</p>
                         <button
                             onClick={() => handleDelete(image.id, image.image_url)}
-                            className='absolute bottom-2 right-2 bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 transition'
+                            className='absolute bottom-2 right-2 bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 transition cursor-pointer'
                         >
                             Delete
                         </button>
