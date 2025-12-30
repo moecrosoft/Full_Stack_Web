@@ -43,7 +43,7 @@ export default function Notes() {
                 />
                 <button 
                     onClick={addNote} 
-                    className='bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-shadow shadow-md md:mt-0 mt-2'
+                    className='bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-shadow shadow-md md:mt-0 mt-2 cursor-pointer'
                 >
                     Add Note
                 </button>
@@ -62,7 +62,7 @@ export default function Notes() {
                         </p>
                         <button
                                 onClick={() => handleDelete(note.id)}
-                                className='absolute bottom-2 right-2 bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 transition'
+                                className='absolute bottom-2 right-2 bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 transition cursor-pointer'
                             >
                                 Delete
                             </button> 
