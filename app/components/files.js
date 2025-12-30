@@ -59,7 +59,7 @@ export default function Files() {
 
             <button
                 onClick={() => fileInputRef.current.click()}
-                className="bg-blue-600 text-white mb-6 px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                className="bg-blue-600 text-white mb-6 px-4 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer"
             >
                 Upload Files
             </button>
@@ -82,7 +82,7 @@ export default function Files() {
                             </a>   
                             <button
                                 onClick={() => handleDelete(file.id, file.file_url)}
-                                className='absolute bottom-2 right-2 bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 transition'
+                                className='absolute bottom-2 right-2 bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 transition cursor-pointer'
                             >
                                 Delete
                             </button> 
