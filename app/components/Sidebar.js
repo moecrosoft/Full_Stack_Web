@@ -16,7 +16,7 @@ export default function Sidebar({ onTabChange, tabsCount }) {
 
             <button 
                 onClick={() => handleTabClick('library')}
-                className={`flex items-center gap-3 mb-2 px-4 py-2 rounded-lg transition-colors
+                className={`flex items-center cursor-pointer gap-3 mb-2 px-4 py-2 rounded-lg transition-colors
                     ${activeTab === 'library'
                         ? 'bg-[#2a2a2a] text-gray-100'
                         : 'hover:bg-[#1f1f1f] hover:text-gray-100'
@@ -27,7 +27,7 @@ export default function Sidebar({ onTabChange, tabsCount }) {
             </button>
             <button 
                 onClick={() => handleTabClick('files')} 
-                className={`flex items-center gap-3 mb-2 px-4 py-2 rounded-lg transition-colors
+                className={`flex items-center cursor-pointer gap-3 mb-2 px-4 py-2 rounded-lg transition-colors
                     ${activeTab === 'files'
                         ? 'bg-[#2a2a2a] text-gray-100'
                         : 'hover:bg-[#1f1f1f] hover:text-gray-100'
@@ -38,7 +38,7 @@ export default function Sidebar({ onTabChange, tabsCount }) {
             </button>
             <button 
                 onClick={() => handleTabClick('notes')} 
-                className={`flex items-center gap-3 mb-2 px-4 py-2 rounded-lg transition-colors
+                className={`flex items-center cursor-pointer gap-3 mb-2 px-4 py-2 rounded-lg transition-colors
                     ${activeTab === 'notes'
                         ? 'bg-[#2a2a2a] text-gray-100'
                         : 'hover:bg-[#1f1f1f] hover:text-gray-100'
@@ -53,7 +53,7 @@ export default function Sidebar({ onTabChange, tabsCount }) {
                     await supabase.auth.signOut();
                     window.location.href = '/login';
                 }}
-                className='mt-auto px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:bg-[#1f1f1f] hover:text-gray-100 transition-colors'
+                className='mt-auto px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:bg-[#1f1f1f] hover:text-gray-100 transition-colors cursor-pointer'
             >
                 Log Out
             </button>
