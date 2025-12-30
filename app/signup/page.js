@@ -36,7 +36,7 @@ export default function Signup() {
                     />
                     <button 
                         onClick={handleSignup} 
-                        className='w-full bg-gray-100 text-gray-900 font-medium py-2.5 rounded-lg hover:bg-gray-200 transition cursor-pointer'
+                        className='w-full bg-gray-100 text-gray-900 font-medium py-2.5 rounded-lg hover:bg-gray-300 transition cursor-pointer'
                     >
                         Sign Up
                     </button>
