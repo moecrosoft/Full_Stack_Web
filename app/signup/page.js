@@ -36,7 +36,7 @@ export default function Signup() {
                     />
                     <button 
                         onClick={handleSignup} 
-                        className='w-full bg-gray-100 text-gray-900 font-medium py-2.5 rounded-lg hover:bg-gray-200 transition'
+                        className='w-full bg-gray-100 text-gray-900 font-medium py-2.5 rounded-lg hover:bg-gray-200 transition cursor-pointer'
                     >
                         Sign Up
                     </button>
@@ -45,7 +45,7 @@ export default function Signup() {
                         Already Registered? {' '}
                         <button
                             onClick={() => router.push('/login')}
-                            className='text-gray-100 font-medium hover:underline'
+                            className='text-gray-100 font-medium hover:underline cursor-pointer'
                         >
                             Log In
                         </button>
